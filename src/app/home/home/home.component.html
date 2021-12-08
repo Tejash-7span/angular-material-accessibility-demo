@@ -1,0 +1,13 @@
+<div class="home-content">
+    <div class="welcome-message">
+        <h2>WELCOME TO HOME PAGE <span *ngIf="userDetails != undefined">, {{ userDetails?.username }} </span></h2>
+    </div>
+    <div class="home-buttons">
+        <button aria-label="About US" mat-raised-button color="warn" (click)="redirectToAboutus()">About US</button>
+        <button aria-label="Contact US" mat-raised-button color="warn" (click)="redirectToContactus()">Contact US</button>
+    </div>
+    <div class="home-buttons">
+        <button aria-label="Click here for the hello message" mat-raised-button color="primary" (click)="helloMessage()">Hello Message</button>
+        <button aria-label="Meaningfull information about screen reader" mat-raised-button color="primary" (click)="screenReaderInfo()">Information about screen reader</button>
+    </div>
+</div>

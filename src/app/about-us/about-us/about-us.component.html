@@ -1,0 +1,9 @@
+<div class="aboutus-content">
+    <div class="welcome-message">
+        <h2>WELCOME TO ABOUT US PAGE <span *ngIf="userDetails != undefined">, {{ userDetails?.username }} </span></h2>
+    </div>
+    <div class="home-buttons">
+        <button mat-raised-button color="warn" (click)="redirectToHome()">Home</button>
+        <button mat-raised-button color="warn" (click)="redirectToContactus()">Contact US</button>
+    </div>
+</div>

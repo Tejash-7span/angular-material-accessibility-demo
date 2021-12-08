@@ -1,0 +1,12 @@
+<div>
+    <nav mat-tab-nav-bar class="header-section" *ngIf="activeLink != 'Login'">
+        <a mat-tab-link (click)="redirectToPage('Home')" [active]="activeLink == 'Home'">Home</a>
+        <a mat-tab-link (click)="redirectToPage('About US')" [active]="activeLink == 'About US'">About US</a>
+        <a mat-tab-link (click)="redirectToPage('Contact US')" [active]="activeLink == 'Contact US'">Contact US</a>
+    </nav>
+    <div class="right-section">
+            <button mat-raised-button color="primary" [attr.aria-label]="loginbuttonlabel" (click)="redirectToPage('Login')"
+            *ngIf="activeLink != 'Login' && isUserLogIn == false">Login</button>
+            <button mat-raised-button color="warn" [attr.aria-label]="logOutbuttonlabel" *ngIf="isUserLogIn == true" (click)="logOut()">LogOut</button>
+    </div>
+</div>

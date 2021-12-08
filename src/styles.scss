@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+@import './assets/scss/index.scss';
+
+html, body { 
+    height: 100%; 
+}
+body { 
+    margin: 0; 
+    font-family: $font; 
+}
+
+.main-header {
+    .mat-tab-header {
+        background-color: $background-color;
+        color: $font-color;
+    }
+    .header-section {
+        float: left;
+    }
+    .right-section {
+        float: right;
+        button {
+            margin: 6px;
+        }
+    }
+}
+
+
+.main-content {
+    text-align: center;
+    height: 100%;
+    padding-top: 120px;
+    h1 {
+        color: $red-color;
+    }
+    button {
+        margin: 10px;
+        align-items: center;
+    }
+    a, .skip-text, button {
+        cursor: pointer;
+    }
+}
